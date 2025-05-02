@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Tree</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <p>world</p>
+
+    <script>
+        const rootNode = document.documentElement;
+
+        console.log(" Root node name :" , rootNode.nodeName); // HTML
+        console.log(" Root node type :" , rootNode.nodeType); // 1
+        console.log(" Root node childNodes :" , rootNode.childNodes);  // NodeList
+
+        const bodyNode = document.body;
+        console.log(" Body :" , bodyNode.parentNode.nodeName); // HTML
+
+        if( rootNode === bodyNode.parentNode )
+            console.log(" Body "); // 출력
+        else
+            console.log("X");
+    </script>
+</body>
+</html>
