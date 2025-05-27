@@ -1,0 +1,1 @@
+{"mappings":"AAEA","sources":["mycss.scss"],"sourcesContent":["$mycolor:red;\r\n\r\nh1{\r\n    color: $mycolor\r\n}"],"names":[],"version":3,"file":"test.93120c86.css.map","sourceRoot":"/__parcel_source_root/"}

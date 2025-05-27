@@ -1,0 +1,1 @@
+{"mappings":"ACEA","sources":["test.754d4b04.css","mycss.scss"],"sourcesContent":["h1 {\n  color: red;\n}\n/*# sourceMappingURL=test.754d4b04.css.map */\n","$mycolor:red;\r\n\r\nh1{\r\n    color: $mycolor\r\n}"],"names":[],"version":3,"file":"test.754d4b04.css.map"}
