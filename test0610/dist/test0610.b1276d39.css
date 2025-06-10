@@ -1,0 +1,14 @@
+.main_container {
+  border: 20px solid #ff0;
+}
+
+.main_container .card_container {
+  border: .5px dashed #00f;
+}
+
+.main_container .card_container .card {
+  background-color: #000;
+  width: 100px;
+  height: 200px;
+}
+/*# sourceMappingURL=test0610.b1276d39.css.map */
