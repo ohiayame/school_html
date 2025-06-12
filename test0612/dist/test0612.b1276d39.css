@@ -1,0 +1,376 @@
+.card_box {
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.card {
+  width: 140px;
+  height: 190px;
+}
+
+.card:first-child .img {
+  background-image: url("cardSpadesA.fd41071f.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(2) .img {
+  background-image: url("cardSpades2.3f5302c5.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(3) .img {
+  background-image: url("cardSpades3.31d275ad.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(4) .img {
+  background-image: url("cardSpades4.49a7a681.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(5) .img {
+  background-image: url("cardSpades5.ad716fe2.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(6) .img {
+  background-image: url("cardSpades6.44749c2a.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(7) .img {
+  background-image: url("cardSpades7.14160b16.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(8) .img {
+  background-image: url("cardSpades8.0540c71b.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(9) .img {
+  background-image: url("cardSpades9.b4a0c8c0.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(10) .img {
+  background-image: url("cardSpades10.df99db77.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(11) .img {
+  background-image: url("cardSpadesJ.60518add.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(12) .img {
+  background-image: url("cardSpadesQ.478619ad.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(13) .img {
+  background-image: url("cardSpadesK.5bb51683.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(14) .img {
+  background-image: url("cardHeartsA.a0dd13af.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(15) .img {
+  background-image: url("cardHearts2.2c140211.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(16) .img {
+  background-image: url("cardHearts3.9e072d64.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(17) .img {
+  background-image: url("cardHearts4.94b689d9.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(18) .img {
+  background-image: url("cardHearts5.08ade3bd.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(19) .img {
+  background-image: url("cardHearts6.306f2c39.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(20) .img {
+  background-image: url("cardHearts7.4b96f6b2.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(21) .img {
+  background-image: url("cardHearts8.f0d7d603.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(22) .img {
+  background-image: url("cardHearts9.35575f77.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(23) .img {
+  background-image: url("cardHearts10.ab660166.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(24) .img {
+  background-image: url("cardHeartsJ.006c14b3.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(25) .img {
+  background-image: url("cardHeartsQ.fd6864b6.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(26) .img {
+  background-image: url("cardHeartsK.aabc1cd6.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(27) .img {
+  background-image: url("cardClubsA.4711162c.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(28) .img {
+  background-image: url("cardClubs2.ca105de3.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(29) .img {
+  background-image: url("cardClubs3.a6052d26.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(30) .img {
+  background-image: url("cardClubs4.f8c6f633.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(31) .img {
+  background-image: url("cardClubs5.78a04d81.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(32) .img {
+  background-image: url("cardClubs6.e42fab1f.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(33) .img {
+  background-image: url("cardClubs7.afd73e71.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(34) .img {
+  background-image: url("cardClubs8.a3eebab7.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(35) .img {
+  background-image: url("cardClubs9.b7087661.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(36) .img {
+  background-image: url("cardClubs10.85c7cd26.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(37) .img {
+  background-image: url("cardClubsJ.08fd5499.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(38) .img {
+  background-image: url("cardClubsQ.864add3f.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(39) .img {
+  background-image: url("cardClubsK.e09b5948.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(40) .img {
+  background-image: url("cardDiamondsA.d196fa3e.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(41) .img {
+  background-image: url("cardDiamonds2.75eae3a6.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(42) .img {
+  background-image: url("cardDiamonds3.56823f40.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(43) .img {
+  background-image: url("cardDiamonds4.02b31ecb.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(44) .img {
+  background-image: url("cardDiamonds5.a1b35aba.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(45) .img {
+  background-image: url("cardDiamonds6.4f7c0227.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(46) .img {
+  background-image: url("cardDiamonds7.4e6fc609.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(47) .img {
+  background-image: url("cardDiamonds8.635d3f1b.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(48) .img {
+  background-image: url("cardDiamonds9.6065ad1c.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(49) .img {
+  background-image: url("cardDiamonds10.63fff3a2.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(50) .img {
+  background-image: url("cardDiamondsJ.6bdb0039.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(51) .img {
+  background-image: url("cardDiamondsQ.7c76c885.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card:nth-child(52) .img {
+  background-image: url("cardDiamondsK.4712bb72.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=test0612.b1276d39.css.map */
