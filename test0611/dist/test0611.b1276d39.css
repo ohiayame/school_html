@@ -1,0 +1,35 @@
+.card_container .card:first-child {
+  background-color: red;
+  border: 2px solid #000;
+  width: 100px;
+  height: 100px;
+}
+
+.card_container .card:nth-child(2) {
+  background-color: #ff0;
+  border: 2px solid #000;
+  width: 200px;
+  height: 100px;
+}
+
+.card_container .card:nth-child(3) {
+  background-color: red;
+  border: 2px solid #000;
+  width: 300px;
+  height: 100px;
+}
+
+.card_container .card:nth-child(4) {
+  background-color: #ff0;
+  border: 2px solid #000;
+  width: 400px;
+  height: 100px;
+}
+
+.card_container .card:nth-child(5) {
+  background-color: red;
+  border: 2px solid #000;
+  width: 500px;
+  height: 100px;
+}
+/*# sourceMappingURL=test0611.b1276d39.css.map */

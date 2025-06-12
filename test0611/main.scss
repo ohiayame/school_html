@@ -1,0 +1,62 @@
+@import "./var";
+
+.card_container {
+    @for $i from 1 through 5 {
+        .card:nth-child(#{$i}){
+
+            @if $i % 2 == 0{
+                background-color: $card-background-color;
+            }@else{
+                background-color: red;
+            }
+
+            width: 100px * $i;
+            height: 100px;
+            border: 2px solid black;
+        }
+    }
+}
+
+
+
+//// @mixin
+// @mixin allign-center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     @content;
+// }
+
+// @mixin my-border($bd-coloer:black){ 
+//     border: {
+//         color: $bd-coloer;
+//         style: dashed;
+//         width: 2px;
+//     }
+// }
+
+// .card_container {
+// @include my-border(red); 
+//     .card{
+//         @include allign-center(){
+//             font-size: 100px
+//         };
+//         width: 100px;
+//         height: 100px;
+//         background-color: $card-background-color;
+//         border: 2px solid black;
+//     }
+// }
+
+// .img_container{
+//     border: {
+//         color: red;
+//         style: dashed;
+//         width: 2px;
+//     };
+//     .img{
+//         width: 50px;
+//         height: 50px;
+//         background-color: aqua;
+//     }
+// }
