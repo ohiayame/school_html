@@ -1,0 +1,61 @@
+.card-box{
+    max-width: 600px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    border: 1px solid black;
+    margin: 0 auto;
+
+    .card_container{
+        width: 100px;
+        height: 150px;
+
+        .card{
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            // transition: border 5s, width 2s;
+            transition: transform 0.8s;
+            position: relative;
+            z-index: 0;
+        }
+        .card:hover{
+            // border: 100px blue dashed;
+            // width: 200%;
+            // transform: scale(3) skew(30deg); // 기울리기
+            transform: scale(1.5) rotate(360deg); // 회전
+            z-index: 10;
+        }
+    }
+    
+}
+
+$path: "Cards/";
+$prefix: "cardDiamonds";
+
+@for $i from 1 through 13 {
+    $lable: $i;
+    @if $i == 1{
+        $lable: "A";
+    }@else if $i == 11{
+        $lable: "J";
+    }@else if $i == 12{
+        $lable: "Q";
+    }@else if $i == 13{
+        $lable: "K";
+    }
+
+    .card-box .card_container:nth-child(#{$i}) .card {
+
+        background-image: url("#{$path}#{$prefix}#{$lable}.png");
+    }
+}
