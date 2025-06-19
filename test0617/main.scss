@@ -1,6 +1,87 @@
+$header-height: 60px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    position: fixed;
+    height: $header-height;
+    width: 100%;
+    background-color: black;
+    z-index: 100000;
+
+    nav {
+        height: 100%;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            list-style: none;
+            gap: 10px;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                color: azure;
+                border: 1px solid white;
+                transition: all 0.5s;
+
+                &:hover {
+                    background-color: aliceblue;
+                }
+            }
+        }
+    }
+}
+
+
+.menu{
+    .link{
+        text-decoration: none;
+    }
+    .odd{
+        color:red;
+    }
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: aqua;
+    width: 100%;
+    z-index: 10000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        flex: 1 1 0;
+        border: black 0.5px dashed;
+        img{
+        height: 100%;
+        width: 150px;
+        }
+    }
+    .contact-info{
+        flex: 3 1 0;
+        border: black 0.5px dashed;
+    }
+}
+
 .card-box{
     max-width: 600px;
-
+    padding-top: $header-height;
 
     display: flex;
     flex-wrap: wrap;
@@ -31,8 +112,9 @@
         .card:hover{
             // border: 100px blue dashed;
             // width: 200%;
+            transform: scale(1.5);
             // transform: scale(3) skew(30deg); // 기울리기
-            transform: scale(1.5) rotate(360deg); // 회전
+            // transform: scale(1.5) rotate(360deg); // 회전
             z-index: 10;
         }
     }
