@@ -6,6 +6,14 @@
     <title>Document</title>
   </head>
   <body>
-    <? print("hello");?>
+    <?php
+      // if($_GET['bar'] > 10)
+      //   echo "<h1 style='color:red'>hello</h1>";
+      // else
+      //   echo "<h1 style='color:green'>hello</h1>";
+
+      echo $_GET['bar']."<br>";
+      echo $_GET['foo']."<br>";
+    ?>
   </body>
 </html>
