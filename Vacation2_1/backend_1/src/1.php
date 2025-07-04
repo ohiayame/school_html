@@ -1,4 +1,6 @@
 <?php
+    
+
     // 주석
 
     //변수 
@@ -37,6 +39,22 @@
 
 
     // 접근범위
+    // $value_1 = 1;
+    // {$value_2 = 2;}
+    // for($i = 0; $i <3; $i++){
+    //     echo $i;
+    // }
+    // echo $i;
+
+    // $value = "전역 변수";
+    // function foo(){
+    //     echo $value;  // error
+
+    //     global $value;// keyword
+    //     echo $value;
+
+    //     echo $GLOBALS["vlaue"]; // Super Global Variable
+    // }
     // 생명주기
     //  - 출생(선언될 때)  - 소멸(?)
 
@@ -51,12 +69,43 @@
     // foo();
     // print $bar;
 
-    function foo(){
-        $count = 0; // -> static $count = 0;
-        $count++;
-        echo $count."<br>";
-    }
-    foo(); // 1  -> 1
-    foo(); // 1  -> 2
-    foo(); // 1  -> 3
+    // function foo(){
+    //     $count = 0; // -> static $count = 0;
+    //     $count++;
+    //     echo $count."<br>";
+    // }
+    // foo(); // 1  -> 1
+    // foo(); // 1  -> 2
+    // foo(); // 1  -> 3
+
+    // function test_1(){
+    //     $value = 0;
+    //     for($i = 0; $i <3; $i++)
+    //         $value++;
+    //     echo $value;
+    // }
+
+    // function test_2(){
+    //     static $value = 0;
+    //     for($i = 0; $i <3; $i++)
+    //         $value++;
+    //     echo $value;
+    // }
+
+    // test_2(); // 3
+    // test_2(); // 6
+    // test_2(); // 9
+
+    // $varName = "myName";
+    // $$varName = "Name";
+    // echo $myName
+
+    define("SITE_NAME","My Website");
+    echo SITE_NAME; // 출력: My Website
+
+    define("CONFIG", ["host" => "localhost", "post" => 3306]);
+    echo CONFIG["host"]; // 출력: localhost
+
+    const PI = 3.1415;
+    echo PI; // 출력: 3.1415
 ?>
