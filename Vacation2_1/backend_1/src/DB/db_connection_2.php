@@ -33,12 +33,12 @@ if (!$result) {
 
 // 3. 반환 값 처리
 
-// while ($row = $result->fetch_assoc()) {
-//   foreach ($row as $key => $value) {
-//     echo $key . ": " . $value . "<br>";
-//   }
-//   echo "<hr>";
-// }
+while ($row = $result->fetch_assoc()) {
+  foreach ($row as $key => $value) {
+    echo $key . ": " . $value . "<br>";
+  }
+  echo "<hr>";
+}
 
 // $result->fetch_array();
 // $result->fetch_row();

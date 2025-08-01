@@ -12,18 +12,18 @@ $result = $db_conn->query($sql);
 //   echo "<br>";
 // }
 
-// while ($row = $result->fetch_assoc()) {
-//   echo $row['std_id'] . "<br>";
-//   echo $row['id'] . "<br>";
-//   echo $row['name'] . "<br>";
-//   echo $row['age'] . "<br>";
-//   echo "<br><br>";
-// }
-
-
 while ($row = $result->fetch_assoc()) {
-    foreac`h ($row as $key => $value) {
-        echo $key . ": " . $value . "<br>";
-    }
-    echo `"<hr>";
+  echo $row['std_id'] . "<br>";
+  echo $row['id'] . "<br>";
+  echo $row['name'] . "<br>";
+  echo $row['age'] . "<br>";
+  echo "<br><br>";
 }
+
+
+// while ($row = $result->fetch_assoc()) {
+//     foreach ($row as $key => $value) {
+//         echo $key . ": " . $value . "<br>";
+//     }
+//     echo "<hr>";
+// }
