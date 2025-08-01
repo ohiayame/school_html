@@ -1,5 +1,11 @@
 <?php
 require_once("./db_conf.php");
+
+// MySQLi 에러 처리 방식 설정
+// MYSQLI_REPORT_STRICT : 예외 발생 (mysqli_sql_exception)
+// MYSQLI_REPORT_ERROR  : 경고(warning) 출력
+// MYSQLI_REPORT_OFF    : 오류 보고 없음 (false 반환)
+// MYSQLI_REPORT_ALL    : STRICT + ERROR 조합
 mysqli_report(MYSQLI_REPORT_ALL);
 
 

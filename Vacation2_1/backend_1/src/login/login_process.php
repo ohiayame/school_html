@@ -15,7 +15,7 @@ mysqli_report(MYSQLI_REPORT_OFF);
 
 // 세션 시작 처리
 // - 사용자 인증 상태 유지 및 에러 메시지 전달에 사용
-session_start();
+// session_start();
 
 // DB 접속 정보 포함
 // - db_info 클래스 내부에 정의된 DB 접속 상수 사용

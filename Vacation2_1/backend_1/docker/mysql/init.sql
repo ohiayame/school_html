@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS student (
     id VARCHAR(20) NOT NULL UNIQUE,              -- 로그인 ID (유일)
     password VARCHAR(100) NOT NULL,              -- 비밀번호 (해싱 필요)
     name VARCHAR(50) NOT NULL,                   -- 이름
-    age INT,                                      -- 나이
+    age TINYINT,                                      -- 나이
     birth DATE                                    -- 생년월일
 );
 

@@ -15,7 +15,7 @@ mysqli_report(MYSQLI_REPORT_OFF);
 
 // 세션 시작 처리
 // - 사용자 상태 정보 유지 및 오류/성공 메시지 전달에 사용
-session_start();
+// session_start();
 
 // DB 접속 정보 포함
 // - db_info 클래스의 정적 상수 활용
@@ -76,11 +76,12 @@ if ($db_conn->query($sql)) {
     // - 세션에 성공 메시지 저장 후 login.php로 리디렉션
     $db_conn->close();
     $_SESSION['success'] = "회원가입이 완료되었습니다. 로그인 해주세요.";
-    header("Location: login.php");
+    header("Location: ./login.php");
     exit;
 } else {
     // 회원가입 실패 처리
     // - 실패 원인 구분: 중복 아이디 (에러코드 1062), 그 외 일반 오류
+    // 1062: Duplicate entry 'xxx' for key 'PRIMARY'
     if ($db_conn->errno === 1062) {
         // 중복된 아이디 사용 시
         $_SESSION['error'] = "이미 사용 중인 아이디입니다.";
@@ -92,6 +93,6 @@ if ($db_conn->query($sql)) {
     }
     $db_conn->close();
     // - 에러 메시지와 함께 register.php로 리디렉션
-    header("Location: register.php");
+    header("Location: ./register.php");
     exit;
 }

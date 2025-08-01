@@ -11,7 +11,7 @@
 
 // 세션 초기화 처리
 // - 세션 기반 사용자 인증 상태 관리에 필요
-session_start();
+// session_start();
 ?>
 
 <!DOCTYPE html>

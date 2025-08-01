@@ -10,7 +10,7 @@
 
 // 세션 초기화 처리
 // - 오류 메시지 등 사용자 상태 전달을 위한 세션 기능 활성화
-session_start();
+// session_start();
 ?>
 
 <!DOCTYPE html>

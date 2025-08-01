@@ -18,12 +18,12 @@ $result = $db_conn->query($sql);
 // echo $result->num_rows;
 
 // mysqli_result -> fetch_filed(), fetch_fields();
-$field_info = $result->fetch_field();
-foreach ($field_info as $key => $field) {
-    echo $key.":".$field."<br>";
-}
+// $field_info = $result->fetch_field();
+// foreach ($field_info as $key => $field) {
+//     echo $key.":".$field."<br>";
+// }
 
-echo "<hr>";
+// echo "<hr>";
 
 
 if (!$result) {
@@ -34,9 +34,13 @@ if (!$result) {
 // 3. 반환 값 처리
 
 while ($row = $result->fetch_assoc()) {
-  foreach ($row as $key => $value) {
-    echo $key . ": " . $value . "<br>";
-  }
+  // foreach ($row as $key => $value) {
+  //   echo $key . ": " . $value . "<br>";
+  // }
+  echo "학번: {$row['std_id']}<br>";
+  echo "이름: {$row['name']}<br>";
+  echo "나이: {$row['age']}<br>";
+  echo "생년월일: {$row['birth']}<br>";
   echo "<hr>";
 }
 
@@ -46,7 +50,7 @@ while ($row = $result->fetch_assoc()) {
 // $result->fetch_object();
 
 // 2차원 배열
-$result->fetch_all();
+// $result->fetch_all();
 
 // 4. 연결 종료QD
 $db_conn->close();
