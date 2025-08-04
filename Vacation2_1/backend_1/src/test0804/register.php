@@ -1,5 +1,9 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +11,25 @@
 </head>
 <body>
     <h1>회원가입</h1>
-
-    <!-- 에러 -->
-        <?php
-            if(isset($_SESSION['error'])){
-                echo "<p style='color:red'>". htmlspecialchars($_SESSION['error'])."</p>";
-                unset($_SESSION['error']);
-            }
-        ?>
-
-    <!-- input form -->
+    <!-- error -->
+    <?php
+        if(isset($_SESSION['error'])){
+            echo "<p style='color:red'>".htmlspecialchars($_SESSION['error'])."</p>";
+        }
+    ?>
     <form action="register_p.php" method="post">
         <fieldset>
-            <legend>회원가입</legend>
-
+            <legend>회원가입 폼</legend>
             <label for="username">아이디:</label>
-            <input type="text" name="username" required >
+            <input type="text" name="username">
             <br>
             <label for="password">비밀번호:</label>
-            <input type="password" name="password" required >
+            <input type="password" name="password">
             <br>
             <label for="name">이름:</label>
-            <input type="text" name="name" required >
+            <input type="text" name="name">
             <br>
-            <input type="submit" value="등록">
+            <input type="submit" value="회원가입">
         </fieldset>
     </form>
     
