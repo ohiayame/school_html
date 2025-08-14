@@ -6,11 +6,22 @@ try{
     $conn = new mysqli(db_info::DB_HOST, db_info::DB_USER, db_info::DB_PW, db_info::DB_NAME);
     $conn->set_charset('utf8mb4');
 
+    $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+    $limit = 5;
+    $offset = ($page - 1) * $limit;
+
+    $t_sql = "SELECT COUNT(*) AS total FROM posts";
+    $total = $conn->query($t_sql);
+    $totla_posts = $total->fetch_assoc()['total'];
+    $total_pages = ceil($totla_posts / $limit);
+
     $sql = "
         SELECT p.id, p.title, u.name AS author, p.created_at, p.views FROM posts p
         JOIN users u ON p.user_id = u.id
+        LIMIT $limit OFFSET $offset
     ";
     $result = $conn->query($sql);
+
 }catch(Exception $e){
     $_SESSION['error'] = $e->getMessage();
 }
@@ -66,6 +77,21 @@ try{
             ?>
         </thead>
     </table>
+    <div>
+        <p>
+        <?php
+            if($total_pages > 1){
+                for($i=1; $i <= $total_pages; $i++){
+                    if($i==$page){
+                        echo "<b>". $i ."</b>";
+                    }else{
+                        echo "<a href='list.php?page={$i}'>". "$i" . "</a>";
+                    }
+                }
+            }
+        ?>
+        </p>
+    </div>
     <?php
     if(isset($_SESSION['user_id'])){
         echo '<p><a href="./write.php">글쓰기</a></p>';
