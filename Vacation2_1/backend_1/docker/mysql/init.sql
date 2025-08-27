@@ -29,14 +29,30 @@ USE gsc;
 -- -- 테이블 생성
 -- USE myapp;
 
--- CREATE TABLE IF NOT EXISTS users (
---     id INT AUTO_INCREMENT PRIMARY KEY,
---     username VARCHAR(50) NOT NULL UNIQUE,
---     email VARCHAR(100),
---     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
--- );
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(50) NOT NULL UNIQUE,
+    grade TINYINT,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- -- 초기 데이터 삽입
+CREATE TABLE IF NOT EXISTS posts(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL ,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT fk_posts_user FOREIGN KEY (user_id) REFERENCES users(id) 
+    ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+-- 초기 데이터 삽입
 -- INSERT INTO users (username, email) VALUES
 -- ('alice', 'alice@example.com'),
 -- ('bob', 'bob@example.com');
@@ -47,15 +63,15 @@ USE gsc;
 
 
 -- 게시판 테이블 생성
-CREATE TABLE IF NOT EXISTS posts (
-    id INT AUTO_INCREMENT PRIMARY KEY,                              -- 게시글 ID
-    title VARCHAR(255) NOT NULL,                                    -- 제목
-    name VARCHAR(100) NOT NULL,                                     -- 작성자 이름
-    password VARCHAR(255) NOT NULL,                                 -- 비밀번호 (해시값)
-    content TEXT NOT NULL,                                          -- 내용
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,                  -- 작성 시각
-    updated_at DATETIME DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP    -- 수정 시각 (수정 시 자동 갱신)
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- CREATE TABLE IF NOT EXISTS posts (
+--     id INT AUTO_INCREMENT PRIMARY KEY,                              -- 게시글 ID
+--     title VARCHAR(255) NOT NULL,                                    -- 제목
+--     name VARCHAR(100) NOT NULL,                                     -- 작성자 이름
+--     password VARCHAR(255) NOT NULL,                                 -- 비밀번호 (해시값)
+--     content TEXT NOT NULL,                                          -- 내용
+--     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,                  -- 작성 시각
+--     updated_at DATETIME DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP    -- 수정 시각 (수정 시 자동 갱신)
+--     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 -- INSERT INTO posts (title, name, password, content)
